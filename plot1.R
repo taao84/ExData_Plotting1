@@ -20,4 +20,7 @@ createPlot1 = function () {
   
   # Plot histogram
   hist(powerConsuptionToAnalize$Global_active_power, breaks = 12, xlab = "Global Active Power(kilowatts)", main = "Global Active Power", col = "red")
+  
+  dev.copy(device = png, file = "plot1.png",  bg = "white")
+  dev.off()
 }
